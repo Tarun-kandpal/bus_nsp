@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Bus Tracking System</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    user-select: none;
+  }
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 90vw;
+    max-width: 320px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+  p.subtitle {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    color: #cdd6f4;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  button {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255,126,95,0.6);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  button:hover, button:focus {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    box-shadow: 0 8px 24px rgba(255,180,123,0.8);
+    outline: none;
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+  /* Mobile responsiveness - fit within 600px height and 350px width */
+  @media (max-width: 375px) {
+    .container {
+      padding: 30px 20px;
+      max-width: 280px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    p.subtitle {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 1.1rem;
+      padding: 14px 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Bus Tracking System landing page">
+    <h1>Bus Tracking System</h1>
+    <p class="subtitle">Real-time bus location & updates at your fingertips.</p>
+    <div class="btn-group">
+      <a href="signin.php"><button type="button">Sign In</button></a>
+      <a href="signup.php"><button type="button">Sign Up</button></a>
+    </div>
+  </div>
+</body>
+</html>
